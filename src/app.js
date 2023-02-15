@@ -53,5 +53,3 @@ const scores = {
     Olga: 1,
     Ivan:5
 }
-
-console.log(getScore(scores))
