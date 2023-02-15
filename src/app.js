@@ -39,3 +39,19 @@ export const getTotal = (items = [], discount = 0) => {
     }, 0)
     return total - total * discount / 100;
 }
+
+export const getScore = (students) => {
+    let sum = 0;
+    for (const name in students) {
+        sum+=students[name];
+    }
+    return sum;
+};
+
+const scores = {
+    Anna: 10,
+    Olga: 1,
+    Ivan:5
+}
+
+console.log(getScore(scores))
